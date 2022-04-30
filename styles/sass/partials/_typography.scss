@@ -1,7 +1,7 @@
 /* 1.2 rem Produces 24px : 20px * 1.2 */
 
 
-h1, h2, h3, h4, a {
+h1, h2, h3, h4, h5, a {
     font-family: $headingFont;
     text-transform: uppercase;
     font-weight: bold;
@@ -32,6 +32,13 @@ h3 {
 h4 {
     font-size: 1.8rem;
     color: $white;
+}
+
+h5 {
+    font-size: 2rem;
+    color: $darkGreen;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 p {

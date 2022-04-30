@@ -1,0 +1,27 @@
+.topFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: $black;
+    flex-basis: calc(100% / 3);
+}
+
+.delicious {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 3);
+}
+
+.recentPosts {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 3);
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 3);
+}
+

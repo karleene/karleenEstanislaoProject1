@@ -240,7 +240,7 @@ html {
 /* site fonts */
 /* site colours */
 /* 1.2 rem Produces 24px : 20px * 1.2 */
-h1, h2, h3, h4, a {
+h1, h2, h3, h4, h5, a {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   font-weight: bold;
@@ -271,6 +271,13 @@ h3 {
 h4 {
   font-size: 1.8rem;
   color: #F6F6F6;
+}
+
+h5 {
+  font-size: 2rem;
+  color: #00b300;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 p {
@@ -436,13 +443,11 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-preferred-size: 33.3333333333;
-      flex-basis: 33.3333333333;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 .gallery .wrapper img {
-  width: 33.3333333333;
+  width: 33.3333333333%;
 }
 
 .testimonials {
@@ -490,4 +495,56 @@ button {
 }
 .testimonials .greaterThan {
   color: #F6F6F6;
+}
+
+.topFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #2E2E2E;
+  -ms-flex-preferred-size: 33.3333333333%;
+      flex-basis: 33.3333333333%;
+}
+
+.delicious {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 33.3333333333%;
+}
+
+.recentPosts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 33.3333333333%;
+}
+
+.subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 33.3333333333%;
 }
