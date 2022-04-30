@@ -1,0 +1,143 @@
+.mainSection {
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 50%;
+
+        .recipe {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+        }
+
+        .lettuce {
+            max-width: 50%;
+        }
+
+        .tacos {
+            max-width: 50%;
+        }
+
+        .menu {
+            max-width: 50%;
+        }
+    }
+    
+}
+
+hr {
+    background-color: $darkGreen;
+    border: 2px solid $darkGreen;
+    border-radius: 2px;
+    width: 70px;
+}
+
+button {
+    width: 180px;
+    height: 35px;
+    background-color: $darkGreen;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+}
+
+.menu {
+    ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+
+    li {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 20px 0;
+        p, h3 {
+            margin: 0;
+            padding: 5px 0;
+        }
+    }
+}
+
+.rest {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+    }
+
+
+// .stamp {
+//     img {
+//         max-width: 100%;
+//     }
+// }
+
+// .dining {
+//     img {
+//         max-width: 100%;
+//     }
+
+// }
+
+.gallery {
+    .wrapper {
+        img {
+            width: calc(100 / 3);
+        }
+
+        display: flex;
+        flex-direction: row;
+        flex-basis: calc(100 / 3);
+        flex-wrap: wrap;
+        
+    }
+}
+
+.testimonials {
+    background-color: $lightGreen;
+    height: 500px;
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    p {
+        width: 75%;
+        font-size: 1.2rem;
+        text-align: center;
+        font-style: italic;
+        line-height: 100%;
+    }
+    
+    p::before {
+        content: '“';
+        font-size: 5rem;
+        color: $white;
+        position: relative;
+        left: -5%;
+
+    }
+
+    p::after {
+        content: '”';
+        font-size: 5rem;
+        color: $white;
+        position: relative;
+        right: -60%;
+    }
+
+    .lessThan {
+        background-color: $white;
+    }
+
+    .greaterThan {
+        color: $white;
+    }
+}
