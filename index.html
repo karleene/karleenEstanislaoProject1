@@ -26,9 +26,9 @@
 </head>
 <body>
     <header class="homeHeader">
-        <div class="wrapper">
-            <h1>Delicious</h1>
             <nav>
+                <div class="wrapper">
+                <h1>Delicious</h1>
                 <ul>
                     <li><a href="./index.html">home</a></li>
                     <li><a href="#">about</a></li>
@@ -40,8 +40,8 @@
                     <li class=><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
                     <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                 </ul>
+                </div>
             </nav>
-        </div>
     </header>
 
 
@@ -124,25 +124,31 @@
         </section>
 
         <section class="restaurants">
-            <div class="wrapper" class="rest">
-                <img src="./assets/home-circle-text.png" class="stamp" alt="yummy food stamp">
+            <div class="wrapper">
+                <div class="fancy">
                 <img src="./assets/home-4.jpeg" class="dining" alt="tables and chairs in a restaurant">
+                <img src="./assets/home-circle-text.png" class="stamp" alt="yummy food stamp">
+                </div>
+                <div class="rest">
                 <h2>our restaurants</h2>
                 <hr>
                 <p>
                     Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.
                 </p>
             </div>
+            </div>
         </section>
         
         <section class ="gallery">
             <div class="wrapper">
-                <img src="./assets/home-5.jpeg" alt="salad in a bowl">
-                <img src="./assets/home-6.jpeg" alt="burger on a plate">
-                <img src="./assets/home-7.jpeg" alt="red onions">
-                <img src="./assets/home-8.jpeg" alt="pink pastel cake with flowers">
-                <img src="./assets/home-9.jpeg" alt="blueberry cookies">
-                <img src="./assets/home-10.jpeg" alt="dressing in a bowl">
+                <ul class="images">
+                    <li><img src="./assets/home-5.jpeg" alt="salad in a bowl"></li>
+                    <li><img src="./assets/home-6.jpeg" alt="burger on a plate"></li>
+                    <li><img src="./assets/home-7.jpeg" alt="red onions"></li>
+                    <li><img src="./assets/home-8.jpeg" alt="pink pastel cake with flowers"></li>
+                    <li><img src="./assets/home-9.jpeg" alt="blueberry cookies"></li>
+                    <li><img src="./assets/home-10.jpeg" alt="dressing in a bowl"></li>
+                </ul>
             </div>
         </section>
 
@@ -189,8 +195,8 @@
                     <h4>subscribe now</h4>
                     <p>Get all of our newest recipes immediately in your inbox</p>
                     <label for="email"></label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email">
-                    <i class="fa-solid fa-right-long"></i>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" class="email">
+                    <i class="fa-solid fa-right-long" class="rightArrow"></i>
                     <nav class="navSocials">
                         <ul>
                             <li><i class="fa-brands fa-facebook-f"></i></li>
@@ -201,8 +207,11 @@
                 </div>
             </div>
 
+            <div class="bottomFooter">
+            <div class="wrapper">
             <p>Copyrights <i class="fa-solid fa-copyright"></i> 2015 by <span>polar</span>. All Rights Reserved</p>
-
+            </div>
+            </div>
         </div>
     </footer>
 

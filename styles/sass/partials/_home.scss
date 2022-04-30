@@ -24,7 +24,15 @@
             max-width: 50%;
         }
     }
-    
+
+    button {
+        width: 180px;
+        height: 35px;
+        background-color: $darkGreen;
+        color: $white;
+        text-transform: uppercase;
+        font-size: 0.6rem;
+    }
 }
 
 hr {
@@ -32,15 +40,6 @@ hr {
     border: 2px solid $darkGreen;
     border-radius: 2px;
     width: 70px;
-}
-
-button {
-    width: 180px;
-    height: 35px;
-    background-color: $darkGreen;
-    color: $white;
-    text-transform: uppercase;
-    font-size: 0.6rem;
 }
 
 .menu {
@@ -63,35 +62,41 @@ button {
     }
 }
 
-.rest {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center
+.restaurants {
+    margin: 150px;
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
     }
 
+    h2 {
+        text-align: center;
+    }
 
-// .stamp {
-//     img {
-//         max-width: 100%;
-//     }
-// }
+    p {
+        text-align: center;
+    }
+}    
 
-// .dining {
-//     img {
-//         max-width: 100%;
-//     }
+.fancy {
+    position: relative;
+}
 
-// }
+.stamp{
+    position: absolute;
+    top: -50px;
+    right: -50px;
+}
 
-.gallery {
-    .wrapper {
-        img {
-            width: calc(100% / 3);
-        }
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;     
+
+.images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    li {
+        flex-basis: calc(100% / 3);
     }
 }
 
@@ -99,6 +104,7 @@ button {
 .testimonials {
     background-color: $lightGreen;
     height: 500px;
+    margin-top: -1rem;
     .wrapper {
         display: flex;
         flex-direction: column;
@@ -131,11 +137,9 @@ button {
         right: -60%;
     }
 
-    .lessThan {
-        background-color: $white;
-    }
-
-    .greaterThan {
+    .arrows {
         color: $white;
     }
+
 }
+

@@ -1,0 +1,41 @@
+header {
+    background-size: cover;
+    min-height: 100vh;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 50px;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    a {
+        padding: 10px;
+    }
+
+    a:hover {
+        color: $darkGreen;
+    }
+}
+
+
+.homeHeader {
+    background: url(../assets/home-1.jpeg) center no-repeat;
+}
+
+.contactHeader{
+    background: url();
+}
+
+.blogHeader {
+    background: url();
+}
+
+
+
+
+
+

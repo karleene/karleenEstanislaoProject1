@@ -7,21 +7,83 @@
     flex-basis: calc(100% / 3);
 }
 
-.delicious {
+.delicious, {
     display: flex;
     flex-direction: column;
-    width: calc(100% / 3);
+    width: calc(70% / 3);
+    h5 {
+        margin: 0;
+    }
+    p {
+        width: 80%;
+    }
 }
 
 .recentPosts {
     display: flex;
     flex-direction: column;
-    width: calc(100% / 3);
+    width: calc(70% / 3);
 }
 
 .subscribe {
     display: flex;
     flex-direction: column;
-    width: calc(100% / 3);
+    width: calc(70% / 3);
+    margin-top: -3rem;
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-left: -2.5rem;
+        li {
+            margin: 0 10px;
+            i {
+                color: $white;
+            }
+        }
+    }
+}
+
+.email {
+    background-color: $brownGrey;
+
+}
+
+
+footer {
+        background-color: $black;
+}
+
+.topFooter {
+    .delicious {
+        p {
+            border-bottom: 1px solid $brownGrey;
+            padding: 5px 0;
+            
+        }
+    }
+
+    .recentPosts {
+        p {
+            border-bottom: 1px solid $brownGrey;
+            padding: 5px 0;
+        }
+    }
+}
+
+.bottomFooter {
+    margin-top: -1rem;
+    background-color: $blackTwo;
+    .wrapper{
+        p {
+            font-size: 0.6rem;
+            color: $brownGrey;
+            padding: 15px;
+            span {
+                text-transform: uppercase;
+                color: $darkGreen;
+            }
+        }
+    }
 }
 
