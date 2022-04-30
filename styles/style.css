@@ -234,3 +234,50 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+/* _variables.scss */
+/* site fonts */
+/* site colours */
+/* 1.2 rem Produces 24px : 20px * 1.2 */
+html {
+  font-size: 125%;
+}
+
+h1, h2, h3, h4, a {
+  font-family: "'Raleway', sans-serif;";
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+a {
+  font-size: 1.8rem;
+  color: #2E2E2E;
+}
+
+h1 {
+  font-size: 2.3rem;
+  color: #2E2E2E;
+  letter-spacing: 1.1px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #2E2E2E;
+  letter-spacing: 0.5px;
+}
+
+h3 {
+  font-size: 1.8rem;
+  color: #333333;
+}
+
+h4 {
+  font-size: 1.8rem;
+  color: #F6F6F6;
+}
+
+p {
+  font-family: "'Lora', serif;";
+  letter-spacing: 0.3px;
+  color: #999999;
+}
