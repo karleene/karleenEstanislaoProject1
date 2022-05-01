@@ -672,6 +672,71 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+
+  .mainSection .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .mainSection .wrapper .lettuce img {
+    display: inline-block;
+    padding: 10px 0;
+  }
+  .mainSection .wrapper .tacos img {
+    padding: 10px 0;
+    display: inline-block;
+  }
+  .mainSection .wrapper .menu ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .testimonials p {
+    font-size: 1rem;
+  }
+  .testimonials p::before {
+    font-size: 3rem;
+    left: -5%;
+  }
+  .testimonials p::after {
+    font-size: 3rem;
+    right: 150px;
+  }
+
+  .topFooter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .topFooter .delicious {
+    width: 100%;
+  }
+  .topFooter .recentPosts {
+    width: 100%;
+  }
+  .topFooter .subscribe {
+    width: 100%;
+  }
+  .topFooter .subscribe span {
+    top: 115px;
+  }
 }
 /* Landscape phones and down */
 @media (max-width: 320px) {
@@ -704,34 +769,33 @@ footer {
   }
 
   .mainSection .wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
-  .mainSection .wrapper .lettuce {
-    -ms-flex-item-align: center;
-        align-self: center;
+  .mainSection .wrapper .recipe {
+    width: 100%;
   }
-  .mainSection .wrapper .tacos {
-    -ms-flex-item-align: center;
-        align-self: center;
+  .mainSection .wrapper .lettuce img {
+    display: inline-block;
+    padding: 10px 0;
+  }
+  .mainSection .wrapper .tacos img {
+    display: inline-block;
+    padding: 10px 0;
   }
   .mainSection .wrapper .menu ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -742,5 +806,38 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+
+  .testimonials p {
+    font-size: 1rem;
+  }
+  .testimonials p::before {
+    font-size: 3rem;
+    left: -5%;
+  }
+  .testimonials p::after {
+    font-size: 3rem;
+    right: 150px;
+  }
+
+  .topFooter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .topFooter .delicious {
+    width: 100%;
+  }
+  .topFooter .recentPosts {
+    width: 100%;
+  }
+  .topFooter .subscribe {
+    width: 100%;
+  }
+  .topFooter .subscribe span {
+    top: 115px;
   }
 }

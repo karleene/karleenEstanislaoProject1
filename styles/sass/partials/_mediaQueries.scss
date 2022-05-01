@@ -1,6 +1,3 @@
-@media (max-width: 940px) {
-}
-
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
         header {
@@ -13,6 +10,76 @@
                 flex-direction: column;
             }
         }
+
+        .mainSection {
+            .wrapper {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                flex-basis: 100%;
+
+                .recipe {
+                    
+                }
+            
+                .lettuce {
+                    img {
+                        display: inline-block;
+                        padding: 10px 0;
+                    }
+                }
+            
+                .tacos {
+                    img {
+                        padding: 10px 0; 
+                        display: inline-block;
+                    }
+                }
+            
+                .menu {
+                    ul {
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+                }
+            }
+        }
+
+        .testimonials {        
+            p {
+                font-size: 1rem;
+            }
+        
+            p::before {
+                font-size: 3rem;
+                left: -5%;
+        
+            }
+        
+            p::after {
+                font-size: 3rem;
+                right: 150px;
+            }
+        }
+
+        .topFooter {
+            flex-direction: column;
+            flex-basis: 100%;
+            .delicious {
+                width: 100%;
+            }
+            .recentPosts {
+                width: 100%;
+            }
+
+            .subscribe {
+                width: 100%;
+                span {
+                    top: 115px;
+                }
+            }
+        }
+        
 }
 
 /* Landscape phones and down */
@@ -33,29 +100,32 @@
     }       
     .mainSection {
         .wrapper {
-            display: flex;
             flex-direction: column;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             justify-content: center;
             align-items: center;
-            // flex-basis: 0;
-            // margin: 50px;
-            // padding: 50px;
-            .recipe {
+            flex-basis: 100%;
 
+            .recipe {
+                width: 100%;
             }
     
             .lettuce {
-                align-self: center;
+                img {
+                    display: inline-block;
+                    padding: 10px 0;
+                }
             }
     
             .tacos {
-                align-self: center;
+                img {
+                    display: inline-block;
+                    padding: 10px 0;
+                }
             }
     
             .menu {
                 ul{
-                    display: flex;
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
@@ -63,4 +133,41 @@
             }
         }
     }
+
+    .testimonials {
+        p {
+            font-size: 1rem;
+        }
+        
+        p::before {
+            font-size: 3rem;
+            left: -5%;
+        }
+        
+        p::after {
+            font-size: 3rem;
+            right: 150px;
+        }
+    }
+
+    .topFooter {
+        flex-direction: column;
+        flex-basis: 100%;
+            
+        .delicious {
+            width: 100%;
+        }
+            
+        .recentPosts {
+            width: 100%;
+        }
+            
+        .subscribe {
+            width: 100%;
+            span {
+                top: 115px;
+            }
+        }
+    }
 }    
+
