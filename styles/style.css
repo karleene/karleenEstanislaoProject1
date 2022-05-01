@@ -295,7 +295,7 @@ html {
 
 .wrapper {
   width: 90%;
-  max-width: 100%;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -505,21 +505,26 @@ hr {
   font-style: italic;
   line-height: 100%;
 }
+.testimonials .testi {
+  position: relative;
+}
 .testimonials p::before {
   content: "“";
   font-size: 5rem;
   color: #F6F6F6;
-  position: relative;
+  position: absolute;
   left: -5%;
 }
 .testimonials p::after {
   content: "”";
   font-size: 5rem;
   color: #F6F6F6;
-  position: relative;
-  right: -60%;
+  position: absolute;
+  right: 200px;
+  bottom: 0;
 }
 .testimonials .arrows {
+  margin-top: 50px;
   color: #F6F6F6;
 }
 
@@ -534,9 +539,6 @@ hr {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: #333333;
   -ms-flex-preferred-size: 33.3333333333%;
       flex-basis: 33.3333333333%;
@@ -553,7 +555,8 @@ hr {
   width: 23.3333333333%;
 }
 .delicious h5 {
-  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 .delicious p {
   width: 80%;
@@ -569,6 +572,9 @@ hr {
           flex-direction: column;
   width: 23.3333333333%;
 }
+.recentPosts p {
+  width: 80%;
+}
 
 .subscribe {
   display: -webkit-box;
@@ -579,7 +585,7 @@ hr {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 23.3333333333%;
-  margin-top: -3rem;
+  position: relative;
 }
 .subscribe ul {
   display: -webkit-box;
@@ -603,6 +609,21 @@ hr {
 
 .email {
   background-color: #999999;
+  font-size: 0.8rem;
+  width: 250px;
+  height: 40px;
+}
+
+.subscribe span {
+  font-size: 1.5rem;
+  width: 50px;
+  height: 40px;
+  color: #F6F6F6;
+  background-color: #00b300;
+  text-align: left;
+  position: absolute;
+  top: 128px;
+  left: 200px;
 }
 
 footer {
@@ -619,15 +640,107 @@ footer {
 }
 
 .bottomFooter {
-  margin-top: -1rem;
   background-color: #2E2E2E;
+  padding: 10px 20px;
 }
 .bottomFooter .wrapper p {
   font-size: 0.6rem;
   color: #999999;
-  padding: 15px;
 }
 .bottomFooter .wrapper p span {
   text-transform: uppercase;
   color: #00b300;
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  header .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 320px) {
+  header .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-flex: wrap;
+        -ms-flex: wrap;
+            flex: wrap;
+  }
+  header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .mainSection .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mainSection .wrapper .lettuce {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .mainSection .wrapper .tacos {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .mainSection .wrapper .menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }

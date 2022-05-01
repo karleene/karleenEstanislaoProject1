@@ -120,11 +120,15 @@ hr {
         line-height: 100%;
     }
     
+    .testi {
+        position: relative;
+    }
+
     p::before {
         content: '“';
         font-size: 5rem;
         color: $white;
-        position: relative;
+        position: absolute;
         left: -5%;
 
     }
@@ -133,11 +137,13 @@ hr {
         content: '”';
         font-size: 5rem;
         color: $white;
-        position: relative;
-        right: -60%;
+        position: absolute;
+        right: 200px;
+        bottom: 0;
     }
 
     .arrows {
+        margin-top: 50px;;
         color: $white;
     }
 

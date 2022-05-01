@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     background-color: $black;
     flex-basis: calc(100% / 3);
 }
@@ -12,7 +11,8 @@
     flex-direction: column;
     width: calc(70% / 3);
     h5 {
-        margin: 0;
+        margin-top: 20px;
+        margin-bottom: 0;
     }
     p {
         width: 80%;
@@ -23,13 +23,16 @@
     display: flex;
     flex-direction: column;
     width: calc(70% / 3);
+    p{
+        width: 80%;
+    }
 }
 
 .subscribe {
     display: flex;
     flex-direction: column;
     width: calc(70% / 3);
-    margin-top: -3rem;
+    position: relative;
     ul {
         display: flex;
         flex-direction: row;
@@ -46,12 +49,30 @@
 
 .email {
     background-color: $brownGrey;
+    font-size: 0.8rem;
+    width: 250px;
+    height: 40px;
+}
 
+.subscribe {
+    span {
+    font-size: 1.5rem;
+    width: 50px;
+    height: 40px;
+    color: $white;
+    background-color: $darkGreen;
+    text-align: left;
+    position: absolute;
+    top: 128px;
+    left: 200px;
+    }
 }
 
 
+
+
 footer {
-        background-color: $black;
+    background-color: $black;
 }
 
 .topFooter {
@@ -72,13 +93,12 @@ footer {
 }
 
 .bottomFooter {
-    margin-top: -1rem;
     background-color: $blackTwo;
+    padding: 10px 20px;
     .wrapper{
         p {
             font-size: 0.6rem;
             color: $brownGrey;
-            padding: 15px;
             span {
                 text-transform: uppercase;
                 color: $darkGreen;
