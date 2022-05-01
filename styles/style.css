@@ -342,11 +342,11 @@ header a:hover {
 }
 
 .contactHeader {
-  background: url();
+  background: url(../../../assets/contact-1.jpeg) no-repeat;
 }
 
 .blogHeader {
-  background: url();
+  background: url(../../../assets/blog-1.jpeg) no-repeat;
 }
 
 .mainSection .wrapper {
@@ -499,7 +499,7 @@ hr {
           align-items: center;
 }
 .testimonials p {
-  width: 75%;
+  width: 80%;
   font-size: 1.2rem;
   text-align: center;
   font-style: italic;
