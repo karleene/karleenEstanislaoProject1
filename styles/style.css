@@ -333,7 +333,8 @@ header ul {
 header a {
   padding: 10px;
 }
-header a:hover {
+header a:hover,
+header a:focus {
   color: #00b300;
 }
 
@@ -347,6 +348,7 @@ header a:hover {
 
 .blogHeader {
   background: url(../assets/blog-1.jpeg) no-repeat;
+  min-height: 75vh;
 }
 
 .mainSection .wrapper {
@@ -384,8 +386,7 @@ header a:hover {
   max-width: 50%;
 }
 .mainSection button {
-  width: 180px;
-  height: 35px;
+  padding: 17px 90px;
   background-color: #00b300;
   color: #F6F6F6;
   text-transform: uppercase;
@@ -526,6 +527,196 @@ hr {
 .testimonials .arrows {
   margin-top: 50px;
   color: #F6F6F6;
+}
+
+.pineapple {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 90%;
+}
+.pineapple .posted {
+  color: #333333;
+  margin-top: -1rem;
+  margin-bottom: 1.5rem;
+}
+.pineapple p {
+  font-size: 0.8rem;
+}
+
+.tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.tags .tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid #999999;
+}
+.tags .share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #999999;
+  margin-bottom: 20px;
+}
+.tags h3 {
+  padding-right: 5px;
+}
+.tags p {
+  padding: 8px 0 0;
+  color: #999999;
+  font-size: 0.8rem;
+}
+.tags i {
+  padding: 0 10px;
+}
+
+.sallyLucas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.sallyLucas .sally {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 50px;
+  padding-left: 35px;
+  border: 1px solid #ebebeb;
+  background-color: #ebebeb;
+}
+.sallyLucas .sally p {
+  font-size: 0.8rem;
+}
+
+.relatedPosts {
+  border-top: 1px solid #999999;
+  margin-top: 50px;
+}
+.relatedPosts .rPosts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.relatedPosts .rPosts .liPics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 20px;
+}
+.relatedPosts .rPosts .liPics p {
+  margin-top: -0.6rem;
+}
+.relatedPosts .rPosts .liPics span {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+.comments {
+  border-top: 1px solid #999999;
+}
+.comments .actualComments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.commentBody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.commentBody img {
+  width: 75px;
+  height: 75px;
+}
+
+.lucatony, .brian {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #ebebeb;
+  margin: -5px 25px 25px;
+  padding: 10px 15px;
+}
+.lucatony span, .brian span {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+.lucatony .date, .brian .date {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+.topForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.bottomForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.leaveAComment button {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 15px 35px;
+  background-color: #00b300;
+  color: #F6F6F6;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.7rem;
 }
 
 .topFooter {
@@ -737,6 +928,30 @@ footer {
   .topFooter .subscribe span {
     top: 115px;
   }
+
+  .sallyLucas {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sallyLucas img {
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+  .sallyLucas .sally {
+    margin-top: 20px;
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+
+  .relatedPosts .rPosts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /* Landscape phones and down */
 @media (max-width: 320px) {
@@ -839,5 +1054,29 @@ footer {
   }
   .topFooter .subscribe span {
     top: 115px;
+  }
+
+  .sallyLucas {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sallyLucas img {
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+  .sallyLucas .sally {
+    margin-top: 20px;
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+
+  .relatedPosts .rPosts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }

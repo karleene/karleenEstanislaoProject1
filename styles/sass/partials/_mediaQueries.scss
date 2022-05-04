@@ -79,7 +79,24 @@
                 }
             }
         }
-        
+
+        .sallyLucas {
+            flex-direction: column;
+            img {
+                max-width: fit-content;
+            }
+            .sally {
+                margin-top: 20px;
+                margin-left: 0px;
+                padding-left: 0px;
+            }
+        }
+
+        .relatedPosts {
+            .rPosts {
+                flex-direction: column;
+            }
+        }
 }
 
 /* Landscape phones and down */
@@ -167,6 +184,24 @@
             span {
                 top: 115px;
             }
+        }
+    }
+
+    .sallyLucas {
+        flex-direction: column;
+        img {
+            max-width: fit-content;
+        }
+        .sally {
+            margin-top: 20px;
+            margin-left: 0px;
+            padding-left: 0px;
+        }
+    }
+
+    .relatedPosts {
+        .rPosts {
+            flex-direction: column;
         }
     }
 }    
