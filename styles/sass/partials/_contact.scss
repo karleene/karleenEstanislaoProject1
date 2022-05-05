@@ -1,0 +1,86 @@
+.contact {
+    display: flex;
+    flex-direction: row;
+    h2 {
+        font-size: 1rem;
+    }
+}
+
+.drop {
+    .wrapper {
+        margin-left: 500px;
+    }
+}
+
+.info {
+    input {
+        background-color: $background;
+        font-size: 0.6rem;
+        border: none;
+        margin: 10px 20px 10px 0;
+        padding: 10px 100px 10px 10px;
+    }
+}
+
+.sub {
+    input {
+        background-color: $background;
+        font-size: 0.6rem;
+        border: none;
+        margin: 10px 20px 10px 0;
+        padding: 10px 355px 10px 10px;
+    }
+}
+
+.msg {
+    textarea {
+        background-color: $background;
+        font-size: 0.6rem;
+        border: none;
+        margin: 10px 20px 10px 0;
+        padding: 10px 340px 200px 10px;
+    }
+}
+
+.send {
+    margin-bottom: 50px;
+    button {
+        color: $darkGreen;
+        border: none;
+        background-color: white;
+        text-transform: uppercase;
+        font-size: 0.6rem;
+        font-weight: bold;
+    }
+    i {
+        color: $darkGreen;
+    }
+}
+
+aside {
+    background-color: $background;
+    .wrapper {
+        margin-left: 50px;
+        width: 25%;
+    }
+    h2 {
+        margin-bottom: 30px;
+    }
+    span {
+        text-transform: uppercase;
+        font-family: $headingFont;
+        font-size: 0.6rem;
+        color: $black;
+    }
+    .italic {
+        font-style: italic;
+    }
+
+    h3 {
+        font-size: 0.7rem;
+        margin-top: 40px;
+    }
+}
+
+
+

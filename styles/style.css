@@ -344,6 +344,7 @@ header a:focus {
 
 .contactHeader {
   background: url(../assets/contact-1.jpeg) no-repeat;
+  min-height: 75vh;
 }
 
 .blogHeader {
@@ -696,6 +697,12 @@ hr {
           justify-content: flex-start;
   margin-bottom: 20px;
 }
+.topForm input {
+  font-size: 0.8rem;
+  padding: 10px;
+  margin-right: 50px;
+  width: 33.3333333333%;
+}
 
 .bottomForm {
   display: -webkit-box;
@@ -717,6 +724,87 @@ hr {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 0.7rem;
+  margin-bottom: 100px;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.contact h2 {
+  font-size: 1rem;
+}
+
+.drop .wrapper {
+  margin-left: 500px;
+}
+
+.info input {
+  background-color: #ebebeb;
+  font-size: 0.6rem;
+  border: none;
+  margin: 10px 20px 10px 0;
+  padding: 10px 100px 10px 10px;
+}
+
+.sub input {
+  background-color: #ebebeb;
+  font-size: 0.6rem;
+  border: none;
+  margin: 10px 20px 10px 0;
+  padding: 10px 355px 10px 10px;
+}
+
+.msg textarea {
+  background-color: #ebebeb;
+  font-size: 0.6rem;
+  border: none;
+  margin: 10px 20px 10px 0;
+  padding: 10px 340px 200px 10px;
+}
+
+.send {
+  margin-bottom: 50px;
+}
+.send button {
+  color: #00b300;
+  border: none;
+  background-color: white;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  font-weight: bold;
+}
+.send i {
+  color: #00b300;
+}
+
+aside {
+  background-color: #ebebeb;
+}
+aside .wrapper {
+  margin-left: 50px;
+  width: 25%;
+}
+aside h2 {
+  margin-bottom: 30px;
+}
+aside span {
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.6rem;
+  color: #333333;
+}
+aside .italic {
+  font-style: italic;
+}
+aside h3 {
+  font-size: 0.7rem;
+  margin-top: 40px;
 }
 
 .topFooter {
@@ -798,13 +886,6 @@ hr {
   color: #F6F6F6;
 }
 
-.email {
-  background-color: #999999;
-  font-size: 0.8rem;
-  width: 250px;
-  height: 40px;
-}
-
 .subscribe span {
   font-size: 1.5rem;
   width: 50px;
@@ -815,6 +896,12 @@ hr {
   position: absolute;
   top: 128px;
   left: 200px;
+}
+.subscribe .email {
+  background-color: #999999;
+  font-size: 0.8rem;
+  width: 250px;
+  height: 40px;
 }
 
 footer {
@@ -952,6 +1039,35 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+
+  .topForm input {
+    font-size: 0.6rem;
+    padding: 10px;
+    margin-right: 15px;
+    width: 33.3333333333%;
+  }
+
+  .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .drop .wrapper {
+    margin-left: 20px;
+  }
+
+  .sub input {
+    padding: 10px 200px 10px 10px;
+  }
+
+  .msg textarea {
+    padding: 10px 185px 200px 10px;
+  }
 }
 /* Landscape phones and down */
 @media (max-width: 320px) {
@@ -1078,5 +1194,27 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+
+  .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .drop .wrapper {
+    margin-left: 20px;
+  }
+
+  .sub input {
+    padding: 10px 200px 10px 10px;
+  }
+
+  .msg textarea {
+    padding: 10px 185px 200px 10px;
   }
 }

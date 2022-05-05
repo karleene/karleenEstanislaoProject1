@@ -112,6 +112,12 @@
     display: flex;
     justify-content: flex-start;
     margin-bottom: 20px;
+    input {
+        font-size: 0.8rem;
+        padding: 10px;
+        margin-right: 50px;
+        width: calc(100% / 3);
+    }
 }
 
 .bottomForm {
@@ -129,8 +135,12 @@
         text-transform: uppercase;
         font-weight: bold;
         font-size: 0.7rem;
+        margin-bottom: 100px;
     }
 }
+
+
+
 
 
 
