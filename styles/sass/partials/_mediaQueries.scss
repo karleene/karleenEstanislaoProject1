@@ -1,4 +1,4 @@
-/* Landscape phone to portrait tablet */
+
 @media (max-width: 768px) {
         header {
             .wrapper {
@@ -58,7 +58,8 @@
         
             p::after {
                 font-size: 3rem;
-                right: 150px;
+                right: -10px;
+                bottom: 0px;
             }
         }
 
@@ -129,7 +130,6 @@
         }
 }
 
-/* Landscape phones and down */
 @media (max-width: 320px) {
     header {
         .wrapper {
@@ -193,7 +193,8 @@
         
         p::after {
             font-size: 3rem;
-            right: 150px;
+            right: 50px;
+            bottom: 0px;
         }
     }
 
@@ -258,4 +259,6 @@
             }
         }
 }    
+
+
 

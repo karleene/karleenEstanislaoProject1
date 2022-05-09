@@ -236,10 +236,6 @@ html {
   overflow: hidden;
 }
 
-/* _variables.scss */
-/* site fonts */
-/* site colours */
-/* 1.2 rem Produces 24px : 20px * 1.2 */
 h1, h2, h3, h4, h5, a {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
@@ -295,7 +291,7 @@ html {
 
 .wrapper {
   width: 90%;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -501,7 +497,7 @@ hr {
           align-items: center;
 }
 .testimonials p {
-  width: 80%;
+  width: 100%;
   font-size: 1.2rem;
   text-align: center;
   font-style: italic;
@@ -522,8 +518,8 @@ hr {
   font-size: 5rem;
   color: #F6F6F6;
   position: absolute;
-  right: 200px;
-  bottom: 0;
+  right: 65px;
+  bottom: -25px;
 }
 .testimonials .arrows {
   margin-top: 50px;
@@ -741,7 +737,7 @@ hr {
 }
 
 .drop .wrapper {
-  margin-left: 500px;
+  margin-left: 300px;
 }
 
 .info input {
@@ -788,7 +784,7 @@ aside {
 }
 aside .wrapper {
   margin-left: 50px;
-  width: 25%;
+  width: 40%;
 }
 aside h2 {
   margin-bottom: 30px;
@@ -930,7 +926,6 @@ footer {
   color: #00b300;
 }
 
-/* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
   header .wrapper {
     display: -webkit-box;
@@ -992,7 +987,8 @@ footer {
   }
   .testimonials p::after {
     font-size: 3rem;
-    right: 150px;
+    right: -10px;
+    bottom: 0px;
   }
 
   .topFooter {
@@ -1069,7 +1065,6 @@ footer {
     padding: 10px 185px 200px 10px;
   }
 }
-/* Landscape phones and down */
 @media (max-width: 320px) {
   header .wrapper {
     display: -webkit-box;
@@ -1148,7 +1143,8 @@ footer {
   }
   .testimonials p::after {
     font-size: 3rem;
-    right: 150px;
+    right: 50px;
+    bottom: 0px;
   }
 
   .topFooter {

@@ -112,7 +112,7 @@ hr {
     }
 
     p {
-        width: 80%;
+        width: 100%;
         font-size: 1.2rem;
         text-align: center;
         font-style: italic;
@@ -137,8 +137,8 @@ hr {
         font-size: 5rem;
         color: $white;
         position: absolute;
-        right: 200px;
-        bottom: 0;
+        right: 65px;
+        bottom: -25px;
     }
 
     .arrows {
