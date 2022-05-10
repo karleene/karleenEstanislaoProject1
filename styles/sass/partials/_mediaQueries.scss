@@ -11,6 +11,15 @@
             }
         }
 
+        .shopBag {
+            position: relative;
+        }
+
+        .two {
+            position: absolute;
+            right: 315px;
+        }
+
         .mainSection {
             .wrapper {
                 flex-direction: column;
@@ -145,6 +154,16 @@
             flex-direction: column;
         }
     }       
+
+    .shopBag {
+        position: relative;
+    }
+
+    .two {
+        position: absolute;
+        right: 315px;
+    }
+
     .mainSection {
         .wrapper {
             flex-direction: column;

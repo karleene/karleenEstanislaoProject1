@@ -305,6 +305,19 @@ img {
   height: auto;
 }
 
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
 header {
   background-size: cover;
   min-height: 100vh;
@@ -346,6 +359,22 @@ header a:focus {
 .blogHeader {
   background: url(../assets/blog-1.jpeg) no-repeat;
   min-height: 75vh;
+}
+
+.shopBag {
+  position: relative;
+}
+
+.two {
+  background-color: #00b300;
+  border-radius: 50%;
+  border: 1px solid #00b300;
+  padding: 1px 3px;
+  color: #F6F6F6;
+  font-weight: bold;
+  position: absolute;
+  right: 0px;
+  top: 0px;
 }
 
 .mainSection .wrapper {
@@ -946,6 +975,15 @@ footer {
             flex-direction: column;
   }
 
+  .shopBag {
+    position: relative;
+  }
+
+  .two {
+    position: absolute;
+    right: 315px;
+  }
+
   .mainSection .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1092,6 +1130,15 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+
+  .shopBag {
+    position: relative;
+  }
+
+  .two {
+    position: absolute;
+    right: 315px;
   }
 
   .mainSection .wrapper {
