@@ -706,6 +706,7 @@ hr {
 }
 .lucatony span, .brian span, .person span {
   font-family: "Raleway", sans-serif;
+  color: #999999;
   font-weight: bold;
   font-size: 0.8rem;
 }

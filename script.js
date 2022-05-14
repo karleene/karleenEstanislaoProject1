@@ -1,17 +1,12 @@
-console.log ('test')
 // LEAVING COMMENT UNDER BLOG SECTION
 
-
 const formElement = document.querySelector('form');
-// const newComment = document.querySelector('.commentBody');
 
-const commentSection = document.querySelector('.comments');
+const commentSection = document.querySelector('.actualComments');
 
 // add a submit listener to our submit button
 formElement.addEventListener('submit', function (e) {
     e.preventDefault();
-
-    // grab all the user's input and format it into an html element that we can append to the page
 
     const nameInput = document.querySelector('input[type=text]');
     const name = nameInput.value;
@@ -29,7 +24,7 @@ formElement.addEventListener('submit', function (e) {
     div.classList.add('commentBody');
 
     const img = document.createElement('img');
-    img.src = 'https://www.shutterstock.com/image-vector/blank-avatar-photo-place-holder-1095249842';
+    img.src = 'https://placekitten.com/200/300';
     img.alt = 'User avatar';
     img.setAttribute('aria-hidden', 'true');
 
@@ -40,18 +35,16 @@ formElement.addEventListener('submit', function (e) {
 
     const userName = document.createElement('span');
     userName.classList.add('nameSpan');
-    userName.textContent = name;
-    console.log(userName);
+    userName.append(name);
 
     pSpan.append(userName);
-    console.log(pSpan);
-
+    
     const userFeedback = document.createElement('p');
     userFeedback.textContent = feedback;
 
-    commentDiv.appendChild(userName, userFeedback);
+    commentDiv.append(userName, userFeedback);
 
-    div.appendChild(img, commentDiv);
+    div.append(img, commentDiv);
 
     commentSection.appendChild(div);
 
@@ -62,8 +55,6 @@ formElement.addEventListener('submit', function (e) {
     feedbackInput.value = '';
 
 })
-
-
 
 // //html & css:  create a burger button and stick it to the bottom right of screen
 
@@ -83,7 +74,7 @@ formElement.addEventListener('submit', function (e) {
 
 
 //     menuButton.addEventListener ('click', function (e) {
-        
+
 //         // menu appears or even better slides into view
 //         // revealMenu is your css that will show the nav
 //         navList.classList.toggle('revealMenu');
