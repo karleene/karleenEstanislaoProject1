@@ -692,7 +692,7 @@ hr {
   height: 75px;
 }
 
-.lucatony, .brian {
+.lucatony, .brian, .person {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -704,12 +704,12 @@ hr {
   margin: -5px 25px 25px;
   padding: 10px 15px;
 }
-.lucatony span, .brian span {
+.lucatony span, .brian span, .person span {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   font-size: 0.8rem;
 }
-.lucatony .date, .brian .date {
+.lucatony .date, .brian .date, .person .date {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
 }
