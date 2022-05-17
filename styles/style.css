@@ -959,23 +959,24 @@ footer {
 }
 
 @media (max-width: 768px) {
-  header .wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .burgerMenu {
+    position: absolute;
+    right: 25px;
   }
+
   header ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    position: absolute;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    right: -250px;
+    -webkit-transition: right 0.5s ease;
+    transition: right 0.5s ease;
+    background-color: #F6F6F6;
+  }
+  header ul.active {
+    right: 0;
   }
 
   .shopBag {
@@ -1107,34 +1108,6 @@ footer {
   }
 }
 @media (max-width: 320px) {
-  header .wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-flex: wrap;
-        -ms-flex: wrap;
-            flex: wrap;
-  }
-  header ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
   .shopBag {
     position: relative;
   }
