@@ -32,20 +32,27 @@
         <nav>
             <div class="wrapper">
                 <h1>Delicious</h1>
-                <ul>
-                    <li><a href="./index.html">home</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">recipes</a></li>
-                    <li><a href="#">nutrition</a></li>
-                    <li><a href="./blog.html">blog</a></li>
-                    <li><a href="#">shop</a></li>
-                    <li><a href="./contact.html">contact</a></li>
-                    <div class="shopBag">
+    
+                <div class="navList" id="navList">
+                    <ul id="navUl">
+                        <li><a href="./index.html">home</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">recipes</a></li>
+                        <li><a href="#">nutrition</a></li>
+                        <li><a href="./blog.html">blog</a></li>
+                        <li><a href="#">shop</a></li>
+                        <li><a href="./contact.html">contact</a></li>
+                        <!-- <div class="shopBag"> -->
                         <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
-                        <p class="two">2</p>
-                    </div>
-                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                </ul>
+                        <!-- <p class="two">2</p> -->
+                        <!-- </div> -->
+                        <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    </ul>
+                </div>
+    
+                <div class="burgerMenu" id="burgerMenu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </div>
         </nav>
     </header>
@@ -125,27 +132,27 @@
             <section class="comments">
                 <h3>02 Comments</h3>
                 <ul class="actualComments">
-                <div class="commentBody">
-                    <img src="./assets/blog-6.jpeg" alt="a woman smiling">
-                    <div class="lucatony">
-                        <p><span class="nameSpan">Lucatony Avaro</span> - Web Developer</p>
-                        <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed
-                        collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.</p>
-                        <p class="date">July 17, 2015 at 15 hours ago</p>
+                    <div class="commentBody">
+                        <img src="./assets/blog-6.jpeg" alt="a woman smiling">
+                        <div class="lucatony">
+                            <p><span class="nameSpan">Lucatony Avaro</span> - Web Developer</p>
+                            <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed
+                            collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.</p>
+                            <p class="date">July 17, 2015 at 15 hours ago</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="commentBody">
-                    <img src="./assets/blog-7.jpeg" alt="a woman looking sideways with a hat on">
-                    <div class="brian">
-                        <p><span class="nameSpan">Brian Hudson</span>- Web Developer</p>
-                        <p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard
-                            tigernut jacama green bean celtuce collard greens avocado quandong fennel gumbo black-eyed pea. Grape silver
-                            beet
-                            watercress potato tigernut corn groundnut.</p>
-                        <p class="date">July 17, 2015 at 15 hours ago</p>
+                    <div class="commentBody">
+                        <img src="./assets/blog-7.jpeg" alt="a woman looking sideways with a hat on">
+                        <div class="brian">
+                            <p><span class="nameSpan">Brian Hudson</span>- Web Developer</p>
+                            <p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard
+                                tigernut jacama green bean celtuce collard greens avocado quandong fennel gumbo black-eyed pea. Grape silver
+                                beet
+                                watercress potato tigernut corn groundnut.</p>
+                            <p class="date">July 17, 2015 at 15 hours ago</p>
+                        </div>
                     </div>
-                </div>
                 </ul>
             </section>
         </div>
@@ -169,7 +176,7 @@
                     <label for="feedback"></label>
                     <textarea name="feedback" id="feedback" cols="50" rows="10" minlength="5" maxlength="200" placeholder="Comment"></textarea>
                     </div>
-                    <button>
+                    <button class="submitButton">
                         submit comment
                     </button>
                     
@@ -227,6 +234,8 @@
         </div>
     </footer>
 
+<script src="./hamburger.js"></script>
+<script src="./blogSubmit.js"></script>
 </body>
 
 </html>

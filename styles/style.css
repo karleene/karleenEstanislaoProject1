@@ -361,20 +361,8 @@ header a:focus {
   min-height: 75vh;
 }
 
-.shopBag {
-  position: relative;
-}
-
-.two {
-  background-color: #00b300;
-  border-radius: 50%;
-  border: 1px solid #00b300;
-  padding: 1px 3px;
-  color: #F6F6F6;
-  font-weight: bold;
-  position: absolute;
-  right: 0px;
-  top: 0px;
+.burgerMenu {
+  display: none;
 }
 
 .mainSection .wrapper {
@@ -692,7 +680,7 @@ hr {
   height: 75px;
 }
 
-.lucatony, .brian {
+.lucatony, .brian, .person {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -704,12 +692,13 @@ hr {
   margin: -5px 25px 25px;
   padding: 10px 15px;
 }
-.lucatony span, .brian span {
+.lucatony span, .brian span, .person span {
   font-family: "Raleway", sans-serif;
+  color: #999999;
   font-weight: bold;
   font-size: 0.8rem;
 }
-.lucatony .date, .brian .date {
+.lucatony .date, .brian .date, .person .date {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
 }
@@ -958,32 +947,25 @@ footer {
 }
 
 @media (max-width: 768px) {
-  header .wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  header ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
-  .shopBag {
-    position: relative;
-  }
-
-  .two {
+  .burgerMenu {
+    display: block;
     position: absolute;
-    right: 315px;
+    right: 25px;
+  }
+
+  header ul {
+    position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    right: -250px;
+    -webkit-transition: right 0.5s ease;
+    transition: right 0.5s ease;
+    background-color: #F6F6F6;
+  }
+  header ul.active {
+    right: 0;
   }
 
   .mainSection .wrapper {
@@ -1106,41 +1088,25 @@ footer {
   }
 }
 @media (max-width: 320px) {
-  header .wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-flex: wrap;
-        -ms-flex: wrap;
-            flex: wrap;
-  }
-  header ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
-  .shopBag {
-    position: relative;
-  }
-
-  .two {
+  .burgerMenu {
+    display: block;
     position: absolute;
-    right: 315px;
+    right: 25px;
+  }
+
+  header ul {
+    position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    right: -250px;
+    -webkit-transition: right 0.5s ease;
+    transition: right 0.5s ease;
+    background-color: #F6F6F6;
+  }
+  header ul.active {
+    right: 0;
   }
 
   .mainSection .wrapper {

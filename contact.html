@@ -32,20 +32,27 @@
         <nav>
             <div class="wrapper">
                 <h1>Delicious</h1>
-                <ul>
-                    <li><a href="./index.html">home</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">recipes</a></li>
-                    <li><a href="#">nutrition</a></li>
-                    <li><a href="./blog.html">blog</a></li>
-                    <li><a href="#">shop</a></li>
-                    <li><a href="./contact.html">contact</a></li>
-                    <div class="shopBag">
-                    <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
-                    <p class="two">2</p>
-                    </div>
-                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                </ul>
+    
+                <div class="navList" id="navList">
+                    <ul id="navUl">
+                        <li><a href="./index.html">home</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">recipes</a></li>
+                        <li><a href="#">nutrition</a></li>
+                        <li><a href="./blog.html">blog</a></li>
+                        <li><a href="#">shop</a></li>
+                        <li><a href="./contact.html">contact</a></li>
+                        <!-- <div class="shopBag"> -->
+                        <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                        <!-- <p class="two">2</p> -->
+                        <!-- </div> -->
+                        <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    </ul>
+                </div>
+    
+                <div class="burgerMenu" id="burgerMenu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </div>
         </nav>
     </header>
@@ -75,7 +82,7 @@
                 </div>
 
                 <div class="send">
-                    <button>
+                    <button class="sendButton">
                         send message <i class="fa-solid fa-arrow-right"></i>
                     </button>
                 </div>
@@ -154,6 +161,7 @@
         </div>
     </footer>
 
+    <script src="./hamburger.js"></script>
 </body>
 
 </html>

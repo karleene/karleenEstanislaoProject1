@@ -91,7 +91,7 @@
     }
 }
 
-.lucatony, .brian {
+.lucatony, .brian, .person {
     display: flex;
     flex-direction: column;
     background-color: $background;
@@ -99,6 +99,7 @@
     padding: 10px 15px;
     span {
         font-family: $headingFont;
+        color: $brownGrey;
         font-weight: bold;
         font-size: 0.8rem;
     }
