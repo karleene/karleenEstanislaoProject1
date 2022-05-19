@@ -1,6 +1,7 @@
 
 @media (max-width: 768px) {
         .burgerMenu {
+            display: block;
             position: absolute;
             right: 25px;
         }
@@ -148,6 +149,7 @@
 
 @media (max-width: 320px) {
     .burgerMenu {
+        display: block;
         position: absolute;
         right: 25px;
     }

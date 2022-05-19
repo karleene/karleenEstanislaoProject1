@@ -361,20 +361,8 @@ header a:focus {
   min-height: 75vh;
 }
 
-.shopBag {
-  position: relative;
-}
-
-.two {
-  background-color: #00b300;
-  border-radius: 50%;
-  border: 1px solid #00b300;
-  padding: 1px 3px;
-  color: #F6F6F6;
-  font-weight: bold;
-  position: absolute;
-  right: 0px;
-  top: 0px;
+.burgerMenu {
+  display: none;
 }
 
 .mainSection .wrapper {
@@ -960,6 +948,7 @@ footer {
 
 @media (max-width: 768px) {
   .burgerMenu {
+    display: block;
     position: absolute;
     right: 25px;
   }
@@ -977,15 +966,6 @@ footer {
   }
   header ul.active {
     right: 0;
-  }
-
-  .shopBag {
-    position: relative;
-  }
-
-  .two {
-    position: absolute;
-    right: 315px;
   }
 
   .mainSection .wrapper {
@@ -1108,13 +1088,25 @@ footer {
   }
 }
 @media (max-width: 320px) {
-  .shopBag {
-    position: relative;
+  .burgerMenu {
+    display: block;
+    position: absolute;
+    right: 25px;
   }
 
-  .two {
+  header ul {
     position: absolute;
-    right: 315px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    right: -250px;
+    -webkit-transition: right 0.5s ease;
+    transition: right 0.5s ease;
+    background-color: #F6F6F6;
+  }
+  header ul.active {
+    right: 0;
   }
 
   .mainSection .wrapper {
