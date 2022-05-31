@@ -760,28 +760,32 @@ hr {
   margin-left: 300px;
 }
 
+.commentContainer {
+  width: 500px;
+}
+
 .info input {
   background-color: #ebebeb;
   font-size: 0.6rem;
   border: none;
-  margin: 10px 20px 10px 0;
-  padding: 10px 100px 10px 10px;
+  width: 49.5%;
+  padding: 5px 10px;
 }
 
 .sub input {
   background-color: #ebebeb;
   font-size: 0.6rem;
   border: none;
-  margin: 10px 20px 10px 0;
-  padding: 10px 355px 10px 10px;
+  width: 100%;
+  margin: 10px 0;
 }
 
 .msg textarea {
   background-color: #ebebeb;
   font-size: 0.6rem;
   border: none;
-  margin: 10px 20px 10px 0;
-  padding: 10px 340px 200px 10px;
+  width: 100%;
+  margin: 10px 0;
 }
 
 .send {
